@@ -6,7 +6,7 @@ NC="\e[0m"
 RED="\033[0;31m" 
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access > /root/tmp
+    curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access > /root/tmp
     data=( $(cat /root/tmp | grep -E "^### " | awk '{print $2}') )
     for user in "${data[@]}"
     do
@@ -24,7 +24,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -41,7 +41,7 @@ Bloman () {
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
         Bloman
     else
@@ -82,7 +82,7 @@ PORT_UDP='2200'
 clear
 apt install apache2 -y
 rm /etc/apache2/ports.conf
-wget -O /etc/apache2/ports.conf https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/apache2.port
+wget -O /etc/apache2/ports.conf https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/apache2.port
 sudo systemctl restart apache2
 clear
 rm /var/www/html/udp.ovpn
