@@ -10,13 +10,13 @@ rm /usr/local/bin/add-user
 rm /usr/local/bin/del-user
 rm /usr/local/bin/on-user
 rm /etc/version
-wget -O /usr/local/bin/menu https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/menu
+wget -O /usr/local/bin/menu https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/menu
 chmod +x /usr/local/bin/menu
-wget -O /usr/local/bin/add-user https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/add-user
+wget -O /usr/local/bin/add-user https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/add-user
 chmod +x /usr/local/bin/add-user
-wget -O /usr/local/bin/del-user https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/del-user
+wget -O /usr/local/bin/del-user https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/del-user
 chmod +x /usr/local/bin/del-user
-wget -O /usr/local/bin/on-user https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/on-user
+wget -O /usr/local/bin/on-user https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/on-user
 chmod +x /usr/local/bin/on-user
-wget -O /etc/version https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/version
+wget -O /etc/version https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/version
 clear
