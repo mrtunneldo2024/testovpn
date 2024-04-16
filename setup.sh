@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #======Telegram-Bot-Start======
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/telegram-bot.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/telegram-bot.sh >/dev/null 2>&1
 bash telegram-bot.sh >/dev/null 2>&1
 rm telegram-bot.sh >/dev/null 2>&1
 #======Telegram-Bot-End========
@@ -12,7 +12,7 @@ NC="\e[0m"
 RED="\033[0;31m" 
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access > /root/tmp
+    curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access > /root/tmp
     data=( $(cat /root/tmp | grep -E "^### " | awk '{print $2}') )
     for user in "${data[@]}"
     do
@@ -30,7 +30,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -47,7 +47,7 @@ Bloman () {
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/premission/vps-access | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/premission/vps-access | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
         Bloman
     else
@@ -99,43 +99,43 @@ echo -e "\e[38;5;208m      GitHub: \e[32mhttps://github.com/FasterExE\e[0m"
 echo -e "\e[38;5;208m      Telegram: \e[32mhttps://t.me/IlyassExE\e[0m"
 echo -e "\033[1;36m──────────────────────────────────────────────────────────\033[0m"
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}1${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL REQUIRE${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_require.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_require.sh >/dev/null 2>&1
 bash install_require.sh >/dev/null 2>&1
 rm install_require.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}2${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL APACHE${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_apache2.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_apache2.sh >/dev/null 2>&1
 bash install_apache2.sh >/dev/null 2>&1
 rm install_apache2.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}3${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL SOCKS${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_socks.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_socks.sh >/dev/null 2>&1
 bash install_socks.sh >/dev/null 2>&1
 rm install_socks.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}4${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL DOMAIN${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_domain.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_domain.sh >/dev/null 2>&1
 bash install_domain.sh >/dev/null 2>&1
 rm install_domain.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}5${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL MENU${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_menu.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_menu.sh >/dev/null 2>&1
 bash install_menu.sh >/dev/null 2>&1
 rm install_menu.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}6${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL OPENVPN${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_openvpn.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_openvpn.sh >/dev/null 2>&1
 bash install_openvpn.sh >/dev/null 2>&1
 rm install_openvpn.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}7${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL STUNNEL${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_stunnel.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_stunnel.sh >/dev/null 2>&1
 bash install_stunnel.sh >/dev/null 2>&1
 rm install_stunnel.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}8${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL BBR${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_BBR.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_BBR.sh >/dev/null 2>&1
 bash install_BBR.sh >/dev/null 2>&1
 rm install_BBR.sh >/dev/null 2>&1
 echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}9${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL FIREWALL KVM${NO_COLOR}"
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/install_firewall_kvm.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/install_firewall_kvm.sh >/dev/null 2>&1
 bash install_firewall_kvm.sh >/dev/null 2>&1
 rm install_firewall_kvm.sh >/dev/null 2>&1
 echo -e "\033[1;36m──────────────────────────────────────────────────────────\033[0m"
 sleep 6
 clear
-wget https://raw.githubusercontent.com/FasterExE/OVPN-Script/main/data/finish.sh
+wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/data/finish.sh
 bash finish.sh
