@@ -75,7 +75,7 @@ else
     exit 0
 fi
 
-Script Variables
+#Script Variables
 PORT_TCP='1194'
 PORT_UDP='2200'
 
