@@ -85,7 +85,7 @@ touch /etc/domain/f-domain
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=mrtunnelvpn.xyz.id
-WS_DOMAIN=ws-${sub}.ovpn.mrtunnelvpn.xyz.id
+WS_DOMAIN=ws-${sub}.mrtunnelvpn.xyz.id
 FLARE_DOMAIN=flare-${sub}.mrtunnelvpn.xyz.id
 NS_DOMAIN=ns-${sub}.mrtunnelvpn.xyz.id
 CF_ID=mahmoud.rabiee.elsayed@gmail.com
