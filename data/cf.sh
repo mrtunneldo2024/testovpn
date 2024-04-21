@@ -84,10 +84,10 @@ touch /etc/domain/d-domain
 touch /etc/domain/f-domain
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=mrtunnelvpn.xyz.id
-WS_DOMAIN=ws-${sub}.mrtunnelvpn.xyz.id
-FLARE_DOMAIN=flare-${sub}.mrtunnelvpn.xyz.id
-NS_DOMAIN=ns-${sub}.mrtunnelvpn.xyz.id
+DOMAIN=mrtunnelvpn.xyz
+WS_DOMAIN=ws-${sub}.ovpn.mrtunnelvpn.xyz
+FLARE_DOMAIN=flare-${sub}.ovpn.mrtunnelvpn.xyz
+NS_DOMAIN=ns-${sub}.mrtunnelvpn.xyz
 CF_ID=mahmoud.rabiee.elsayed@gmail.com
 CF_KEY=2111d694773708c0e603c346ef9c97fd4d83c
 set -euo pipefail
