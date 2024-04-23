@@ -25,8 +25,8 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="Installation VIP OVPN-Script
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Name       :</code> <code>$Name</code>
-<code>Username   :</code> <code>najhi</code>
-<code>Password   :</code> <code>najhi</code>
+<code>Username   :</code> <code>mrvpn</code>
+<code>Password   :</code> <code>mrvpn</code>
 <code>IP  Vps    :</code> <code>$MYIP</code>
 <code>ISP Vps    :</code> <code>$ISP</code>
 <code>Timezone   :</code> <code>$TIMEZONE</code>
