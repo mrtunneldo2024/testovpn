@@ -87,7 +87,7 @@ sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=mrtunnelvpn.xyz
 WS_DOMAIN=ws-${sub}.mrtunnelvpn.xyz
 FLARE_DOMAIN=flare-${sub}.mrtunnelvpn.xyz
-NS_DOMAIN=ns-${sub}mrtunnelvpn.xyz
+NS_DOMAIN=ns-${sub}.mrtunnelvpn.xyz
 CF_ID=mahmoud.rabiee.elsayed@gmail.com
 CF_KEY=2111d694773708c0e603c346ef9c97fd4d83c
 set -euo pipefail
