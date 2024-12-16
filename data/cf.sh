@@ -84,12 +84,12 @@ touch /etc/domain/d-domain
 touch /etc/domain/f-domain
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=ilyass.my.id
-WS_DOMAIN=ws-${sub}.ovpn.ilyass.my.id
-FLARE_DOMAIN=flare-${sub}.ovpn.ilyass.my.id
-NS_DOMAIN=ns-${sub}.ilyass.my.id
-CF_ID=ilyassnajhi10@gmail.com
-CF_KEY=c802b86ce41793d4aed457ad769889b7e31e9
+DOMAIN=mrtunnelvpn.store
+WS_DOMAIN=ws-${sub}.ovpn.mrtunnelvpn.store
+FLARE_DOMAIN=flare-${sub}.ovpn.mrtunnelvpn.store
+NS_DOMAIN=ns-${sub}.mrtunnelvpn.store
+CF_ID=mrupdo2024@gmail.com
+CF_KEY=9e084868b0244eaf8ab508ddb525b5a82b2ac
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${WS_DOMAIN}..."
