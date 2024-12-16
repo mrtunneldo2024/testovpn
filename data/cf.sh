@@ -88,7 +88,7 @@ DOMAIN=mrtunnelvpn.store
 WS_DOMAIN=ws-${sub}.ovpn.mrtunnelvpn.store
 FLARE_DOMAIN=flare-${sub}.ovpn.mrtunnelvpn.store
 NS_DOMAIN=ns-${sub}.mrtunnelvpn.store
-CF_ID=mrupdo2024@gmail.com
+CF_ID=mrupco2024@gmail.com
 CF_KEY=9e084868b0244eaf8ab508ddb525b5a82b2ac
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
