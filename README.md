@@ -7,7 +7,7 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 ## INSTALL SCRIPT 
 Enter the command below to install Ovpn Script by 𓆩 mrtunnel 𓆪
 ```
-apt install -y && apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/mrtunneldo2024/testovpn/main/setup.sh; bash setup.sh
+apt install -y && apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/mrtunneldo2024/aio/refs/heads/main/sc.sh
 ```
 
 ## TESTED ON OS
